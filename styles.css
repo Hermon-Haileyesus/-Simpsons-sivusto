@@ -1,0 +1,155 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("./Roboto/Roboto-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("./Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf");
+  font-style: italic;
+}
+body {
+    margin-left:100px;
+    margin-right: 100px;
+    background-color:#CDDF8D;
+    font-family: Roboto, sans-serif;
+    height: 100vh;
+    font-size: 20px;
+    
+  }
+p{
+  font-size: 1.2em;
+
+}
+
+
+h1 {
+    color: #FFFFFF; 
+    font-size: 60px;
+    font-family: Montserrat;
+}
+
+h2 {
+    color: rgb(96, 16, 171);
+    font-size: 48px;
+    font-family: Montserrat;
+}
+
+h3 {
+    color: rgb(96, 16, 171);
+    font-size: 32px;
+    font-family: Montserrat;
+    
+}
+
+h4 {
+    color: rgb(96, 16, 171);
+    font-size: 18px;
+    font-family: Montserrat;
+}
+
+h5, h6 {
+    color: rgb(96, 16, 171);
+    font-size: 16px; 
+    font-family: Montserrat;
+}
+.Container{
+  display: grid;
+  grid-template-areas: 
+  'header header header header'
+  'mainNav mainNav mainNav mainNav'
+  'bannerImage bannerImage bannerImage bannerImage'
+  'content content content content'; 
+  gap: 10px;
+  background-color: #CDDF8D;
+}
+.header {
+  grid-area: header;
+  background-color: #1769B6;
+  display: flex;
+  gap: 20px;
+}
+.mainNav{
+  grid-area: mainNav;
+  background-color: #5C9ED9;
+  display: flex;
+  
+  background-color: ;
+  gap: 20px;
+}
+.link {
+    padding: 30px;
+    display: inline-block;
+}
+
+.link:hover {
+    background-color: #E44423; 
+}
+.link a {
+    color: #FFFFFF; 
+    text-decoration: none; 
+    font-size: 30PX;
+}
+
+.link a:hover, .link a:active {
+    color: black;
+}
+
+.link a:visited {
+    color: black; 
+}
+
+
+
+
+.bannerImage{
+  grid-area: bannerImage;
+}
+.content{
+  grid-area: content;
+  background-color: #FFFFFF;
+}
+.content1{
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  gap: 20px;
+}
+.discription{
+  border-bottom: 5px solid #000;
+}
+.comment p:last-of-type {
+    text-align: right;
+}
+
+.content2 .comment{
+  padding: 15px;
+}
+
+
+.info table {
+  border: 3px solid black;
+  border-spacing: 10px;
+
+}
+th, td {
+    padding: 10px; 
+    width: 150px;
+    vertical-align: top;
+    text-align: left;
+}
+.kehittajat, .Tuottajat{
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+}
+
+@media (max-width: 639px){
+  .content1{
+    flex-direction: column;
+  }
+}
+
