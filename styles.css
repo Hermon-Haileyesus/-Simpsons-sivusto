@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-    color: rgb(96, 16, 171);
+    color: #000000;
     font-size: 48px;
     font-family: Montserrat;
 }
@@ -95,22 +95,29 @@ h5, h6 {
 }
 
 .link a:hover, .link a:active {
-    color: black;
+    color: #000000;
 }
 
-.link a:visited {
-    color: black; 
-}
 
 
 
 
 .bannerImage{
   grid-area: bannerImage;
+  width: 100%; 
+  height: 400px; 
+  overflow: hidden; 
+
+}
+.bannerImage img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
 .content{
   grid-area: content;
   background-color: #FFFFFF;
+  padding: 20px;
 }
 .content1{
   display: flex;
@@ -146,6 +153,48 @@ th, td {
     padding: 0; 
     margin: 0;
 }
+.gallery {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 350px; 
+    
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    height: 300px;
+    
+}
+
+.image img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+.back a  {
+    text-decoration: none;
+  
+}
+
+.back a h2 {
+    color: #E44423;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 639px){
   .content1{
