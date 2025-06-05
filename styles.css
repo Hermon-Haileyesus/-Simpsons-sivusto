@@ -14,7 +14,7 @@
 body {
     margin-left:100px;
     margin-right: 100px;
-    background-image: url('/kuvat/backgroundpic.jpg');
+    background-image: url('./kuvat/backgroundpic.jpg');
     background-size: cover;
     font-family: Roboto, sans-serif;
     height: 100vh;
@@ -65,7 +65,7 @@ h5, h6 {
   'bannerImage bannerImage bannerImage bannerImage'
   'content content content content'; 
   gap: 10px;
-  background-image: url('/kuvat/backgroundpic.jpg');
+  background-image: url('./kuvat/backgroundpic.jpg');
   background-size: cover;
 }
 .header {
@@ -344,7 +344,7 @@ audio {
   color: #000000; 
 }
 #messageDialog{
-  background-image: url('/kuvat/backgroundpic.jpg');
+  background-image: url('./kuvat/backgroundpic.jpg');
   background-size: cover;
 }
 form button{
