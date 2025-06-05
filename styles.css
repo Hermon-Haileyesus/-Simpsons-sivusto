@@ -76,12 +76,12 @@ h5, h6 {
 }
 .mainNav{
   grid-area: mainNav;
-  background-color: #5C9ED9;
+  background-color: #cddf8d;
 }
 .mainNav a {
             display: inline-block;
             padding: 40px 40px;
-            background-color: #5C9ED9;
+            background-color: #cddf8d;
             color: #000000; 
             text-decoration: none;
             border-radius: 5px;
@@ -133,9 +133,12 @@ h5, h6 {
 }
 .comment a{
             
-            color: #E44423; 
+            color: #1769B6; 
             font-family: Montserrat ;
             font-weight: 800;
+}
+.comment a:hover{
+  color: #E44423;
 }
 
 .content2 .comment{
@@ -182,7 +185,7 @@ th, td {
 }
 
 .image img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.2); 
 }
 .image2 {
     width: 200px; 
@@ -250,19 +253,28 @@ th, td {
     background-color: #FCCB00;
     gap: 10px;
 }
-.left img{
-  width:100%;
-}
+
+
 .left{
   display: flex;
   background-color: #FFFFFF;
   justify-content: center;
   align-items: center;
 }
+
+
 .left img {
-    max-width: 100%;
-    height: auto;
-}
+            width: 100%; 
+            animation: resizeAnimation 4s ease-in-out;
+        }
+ @keyframes resizeAnimation {
+            0% { width: 100%; }
+            25% { width: 80%; } 
+            50% { width: 100%; } 
+            75% { width: 80%; } 
+            100% { width: 100%; } 
+        }
+
 
 
 .right{
@@ -327,16 +339,17 @@ audio {
   }
 
 #avaaDialog:hover {
-  background-color: #FCCB00; 
+  background-color: #cddf8d; 
   transform: scale(1.1);
   color: #000000; 
 }
 #messageDialog{
-  background-color: #CDDF8D;
+  background-image: url('/kuvat/backgroundpic.jpg');
+  background-size: cover;
 }
 form button{
-  font-size: 20px; 
-  background-color: #1769B6; 
+  font-size: 28px; 
+  background-color: #E44423; 
   border: none;
   padding: 20px 20px;
   margin: 20px;
@@ -350,10 +363,26 @@ form button{
 
 }
 form button:hover{
-  background-color: #E44423; 
+  background-color:#cddf8d; 
   transform: scale(1.1);
   color: #000000; 
 }
+label {
+    font-size: 28px;  
+    font-weight: bold; 
+    color: #ffffff;
+}
+input{
+  margin-left: 20px;
+}
+input, textarea {
+    font-size: 20px;  
+    padding: 10px;    
+          
+}
+
+
+
 
 
 
