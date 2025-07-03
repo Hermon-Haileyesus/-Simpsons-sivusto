@@ -104,7 +104,7 @@ h5, h6 {
 .bannerImage{
   grid-area: bannerImage;
   width: 100%; 
-  height: 400px; 
+  height: auto;
   overflow: hidden; 
 
 }
@@ -203,6 +203,42 @@ th, td {
 
 .image2 img:hover {
     transform: scale(1.1); 
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+}
+
+#largeImg {
+  width: 100%;
+  display: block;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 8px 14px;
 }
 .back a  {
     text-decoration: none;
@@ -381,27 +417,42 @@ input, textarea {
           
 }
 
+@media (max-width: 600px){
+  body {
+    margin-left:10px;
+    margin-right: 10px;
+   }
+  h1 {
+    color: #FFFFFF; 
+    font-size:25px;
+    font-family: Montserrat;
+}
+h2,h3,h4,h5,h6{
+  font-size: 14px;
+}
+ 
+
+.header{
+  display: grid;
+ 
+}
+.header.logo{
+  width: 100px;
+}
+.mainNav{
+  display: grid;}
+.content1{
+  display: flex;
+  flex-direction: ;
+  flex-wrap: wrap;
+}
+
+.bannerImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 639px){
-  .content1{
-    flex-direction: column;
-  }
 }
 

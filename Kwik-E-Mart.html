@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="Kwik-E-Mart.js" dom></script>
     <title>Kwik-E-Mart</title>
     
 </head>
@@ -21,41 +22,42 @@
         </div>
         <div class="content">
             <h2>Kwik-E-Mart</h2>
-            <div class="gallery">
+            <div class="gallery" id="gallery">
                 <div class="image">
-                    <a href="./kwik1.html">
-                        <img src="./kuvat/Kwik-e-mart/kuva1.jpg" alt="Kwik-E-Mart">
-                    </a>
-                </div>
-                <div class="image">
-                    <a href="./kwik2.html">
-                        <img src="./kuvat/Kwik-e-mart/kuva2.jpg" alt="Kwik-E-Mart">
-                    </a>
-                </div>
-                <div class="image">
-                    <a href="./kwik3.html">
-                        <img src="./kuvat/Kwik-e-mart/kuva3.jpg" alt="Kwik-E-Mart">
-                    </a>
-                </div>
-                <div class="image">
-                    <a href="./kwik4.html">
-                        <img src="./kuvat/Kwik-e-mart/kuva4.jpg" alt="Kwik-E-Mart">
-                    </a>
-                </div>
-                <div class="image">
-                    <a href="./kwik5.html">
-                        <img src="./kuvat/Kwik-e-mart/kuva5.jpg" alt="Kwik-E-Mart">
-                    </a>
-                </div>
-                <div class="image">
-                    <a href="./kwik6.html">
-                        <img src="./kuvat/Kwik-e-mart/kuva6.jpg" alt="Kwik-E-Mart">
-                    </a>
-                </div>
-                
+                     <img src="./kuvat/Kwik-e-mart/kuva1.jpg" alt="Kwik-E-Mart" onclick="showLargeImage(this.src)" style="cursor:pointer;" />
+                 </div>
+                 <div class="image">
+                     <img src="./kuvat/Kwik-e-mart/kuva2.jpg" alt="Kwik-E-Mart" onclick="showLargeImage(this.src)" style="cursor:pointer;" />
+                 </div>
+                 <div class="image">
+                     <img src="./kuvat/Kwik-e-mart/kuva3.jpg" alt="Kwik-E-Mart" onclick="showLargeImage(this.src)" style="cursor:pointer;" />
+                 </div>
+                 <div class="image">
+                     <img src="./kuvat/Kwik-e-mart/kuva4.jpg" alt="Kwik-E-Mart" onclick="showLargeImage(this.src)" style="cursor:pointer;" />
+                 </div>
+                 <div class="image">
+                     <img src="./kuvat/Kwik-e-mart/kuva5.jpg" alt="Kwik-E-Mart" onclick="showLargeImage(this.src)" style="cursor:pointer;" />
+                 </div>
+                 <div class="image">
+                     <img src="./kuvat/Kwik-e-mart/kuva6.jpg" alt="Kwik-E-Mart" onclick="showLargeImage(this.src)" style="cursor:pointer;" />
+                 </div>
+            
             </div>
+            <div id="largeImageView"  style="display:none; text-align:center;">
+                <div class="image-wrapper">
+                    <button class="nav-button left" onclick="showPrev()">⬅️</button>
+                    <img id="largeImg" src="" alt="Large View" />
+                    <button class="nav-button right" onclick="showNext()">➡️</button>
+                    
+                </div>
+                <button onclick="goBack()">← Back to Gallery</button>
+            </div>
+
+
         </div>
     </div>
-    
+
+
+   
 </body>
 </html>
